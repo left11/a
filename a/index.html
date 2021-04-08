@@ -1,1 +1,108 @@
-hello world
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>t.js|Simple multilingual support for web pages</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<!-- Google fonts -->
+
+<!-- css files -->
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<!-- //css files -->
+
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+
+<link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" /> <!-- popup box css -->
+
+</head>
+<!-- body starts -->
+<body>
+
+<!-- section -->
+<section class="register">
+	<div class="header">
+		<div class="logo">
+			<a href="#">A.JS-V0.1</a>
+		</div>
+	<div class="social">
+
+	</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="register-full">
+		<div class="register-left">
+			<div class="register">
+				<p>Introduction</p>
+				<h1>A.JS </h1>
+				<h2>an easy to use just in time translate simple Chinese to traditional Chinese</h2>
+				<div class="content3">
+					<ul>
+						<li><a class="" href="example.html"> DEMO</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="register-right">
+			<div class="register-in">
+				<p style="
+				color: wheat;
+			">Just like its name A.js, it is very simple to use it in your website.</p>
+				<p style="
+    color: wheat;
+">Example code:</p>
+			<textarea style="width:100%">
+<html>
+    <title>Demo</title>
+    <meta charset="UTF-8" />
+    <script src="js/A.js"></script>
+<body>
+    <!-- 中文注释 -->
+
+    <h1>Simple Chinese: </h1>
+    <input type='text' value='你好世界' id='input'></input>
+
+    <h1>Traditional Chinese:</h1>
+    <input type='text' id='result' ></input>
+    <br/>
+    <button id='btn'>click me</button>
+
+    <script>
+        var btn = document.querySelector('#btn');
+        btn.addEventListener('click', function() {
+            var result = document.querySelector('#result');
+            var input = document.querySelector('#input');
+            result.value = kzblur.tradString(input.value);
+        })
+    </script>
+</body>
+</html>
+</textarea>
+			</div>
+			
+		</div>
+	<div class="clear"> </div>
+	</div>
+	<!-- copyright -->
+	
+	<!-- //copyright -->
+</section>
+<!-- //section -->
+
+
+
+
+
+</body>	
+<!-- //body ends -->
+</html>
