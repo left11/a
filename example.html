@@ -1,0 +1,25 @@
+<html>
+    <title>Demo</title>
+	<meta charset="UTF-8" />
+    <script src="js/A.js"></script>
+<body>
+    <!-- 中文注释 -->
+
+    <h1>Simple Chinese: </h1>
+    <input type='text' value='你好世界' id='input'></input>
+
+    <h1>Traditional Chinese:</h1>
+    <input type='text' id='result' ></input>
+    <br/>
+    <button id='btn'>click me</button>
+
+    <script>
+        var btn = document.querySelector('#btn');
+        btn.addEventListener('click', function() {
+            var result = document.querySelector('#result');
+            var input = document.querySelector('#input');
+            result.value = kzblur.tradString(input.value);
+        })
+    </script>
+</body>
+</html>
